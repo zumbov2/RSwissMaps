@@ -1,3 +1,4 @@
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/RSwissMaps)](https://cran.r-project.org/package=RSwissMaps)
 # RSwissMaps
 
 RSwissMaps allows to link thematic data to Swiss administrative divisions (municipalities, districts, cantons) and to plot it on a map. The maps can be customised to some degree and saved in different formats and resolutions. The package also allows to generate tailored templates for data collection. The geodata used is publicly available on the Swiss Federal Statistical Office [website](https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik.html>).
