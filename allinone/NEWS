@@ -1,0 +1,16 @@
+RSwissMaps 0.1.1
+-----------------
+
+* map.load() downloads geodata no longer twice
+
+* simplified color_discrete in all functions
+
+* set default for year in all functions to 2016
+
+* improved documentation for all functions
+
+
+RSwissMaps 0.1.0
+-----------------
+
+* First version of the package.
