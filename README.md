@@ -5,7 +5,6 @@ RSwissMaps allows to link thematic data to Swiss administrative divisions (munic
 ## Data availability
 Geodata of Swiss municipalities, districts, and cantons is currently available for: 2001-1-1, 2002-1-1, 2003-1-1, 2004-1-1, 2005-1-1, 2006-1-1, 2007-1-1, 2008-1-1, 2009-1-1, 2010-1-1, 2010-31-12, 2011-1-1, 2011-31-12, 2012-1-1, 2012-31-12, 2013-1-1, 2013-31-12, 2014-1-1, 2014-31-12, 2015-1-1, 2015-31-12, 2016-1-1, 2016-31-12, 2017-1-1.
 
-
 # Installation
 The version 0.1.1 is on CRAN, and you can install it by:
 ```
@@ -16,3 +15,53 @@ For regularly updated version with all geodata pre-installed, install from GitHu
 install.packages("devtools")
 devtools::install_github("zumbov2/RSwissMaps", subdir = "allinone")
 ```
+
+# Examples
+## Example 1 (with code)
+![municipalities](https://github.com/zumbov2/RSwissMaps/blob/master/plots/mun_plot.png)
+```
+gemeinden <- mun.template(2017)
+
+for(i in 1:nrow(gemeinden)){
+  gemeinden$values[i] <- sample(c(300:700), 1)/1000
+}
+
+mun.plot(gemeinden$bfs_nr, gemeinden$values, 2017,
+         color_continuous = c("#c7e9c0", "#006d2c"),
+         boundaries_size = 0.2,
+         title = "Random data",
+         subtitle = "Schweizer Gemeiden, 2017",
+         caption = "Plotted with RSwissMaps",
+         save = F,
+         dpi = 1000)
+```
+
+## Example 2 (with code)
+![municipalities2](https://github.com/zumbov2/RSwissMaps/blob/master/plots/mun_plot2.png)
+```
+gemeinden <- mun.template(2017, cantons = c("AG", "ZH"))
+
+for(i in 1:nrow(gemeinden)){
+  
+  gemeinden$values[i] <- sample(c(300:700), 1)/1000
+  
+}
+
+mun.plot(gemeinden$bfs_nr, gemeinden$values, 2017,
+         cantons = c("AG", "ZH"),
+         lakes = c("Hallwilersee", "Zürichsee", "Greifensee"),
+         boundaries = c("m", "c"), boundaries_color =  c("white", "white"),
+         boundaries_size = c(0.2, 1),
+         title = "Random data",
+         subtitle = "Aargauer und Zürcher Gemeiden, 2017",
+         caption = "Plotted with RSwissMaps",
+         save = T,
+         filename = "mun_plot2.png",
+         dpi = 1000)
+```
+
+## Example 3 (real data)
+![districts](https://github.com/zumbov2/RSwissMaps/blob/master/plots/dis_plot.png)
+
+## Example 4 (real data)
+![cantons](https://github.com/zumbov2/RSwissMaps/blob/master/plots/can_plot.png)
