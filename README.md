@@ -2,7 +2,7 @@
 [![Licence](https://img.shields.io/badge/licence-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 # RSwissMaps
 
-RSwissMaps allows to link thematic data to Swiss administrative divisions (municipalities, districts, cantons) and to plot it on a map. The maps can be customised to some degree and saved in different formats and resolutions. The package also allows to generate tailored templates for data collection. The geodata used is publicly available on the Swiss Federal Statistical Office [website](https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik.html>).
+RSwissMaps allows to link thematic data to Swiss administrative divisions (municipalities, districts, cantons) and to plot it on a map. The maps can be customised (to some degree) and saved in different formats and resolutions. The package also allows to generate tailored templates for data collection. The geodata used is publicly available on the Swiss Federal Statistical Office [website](https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html). 
 
 ## Data availability
 Geodata of Swiss municipalities, districts, and cantons is currently available for: 2001-1-1, 2002-1-1, 2003-1-1, 2004-1-1, 2005-1-1, 2006-1-1, 2007-1-1, 2008-1-1, 2009-1-1, 2010-1-1, 2010-31-12, 2011-1-1, 2011-31-12, 2012-1-1, 2012-31-12, 2013-1-1, 2013-31-12, 2014-1-1, 2014-31-12, 2015-1-1, 2015-31-12, 2016-1-1, 2016-31-12, 2017-1-1.
