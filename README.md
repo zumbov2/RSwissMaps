@@ -34,7 +34,7 @@ mun.plot(gemeinden$bfs_nr, gemeinden$values, 2017,
          title = "Random data",
          subtitle = "Schweizer Gemeiden, 2017",
          caption = "Plotted with RSwissMaps",
-         save = F,
+         save = T,
          dpi = 1000)
 ```
 
