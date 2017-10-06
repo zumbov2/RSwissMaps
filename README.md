@@ -18,7 +18,7 @@ The version 0.1.0 is on CRAN, and you can install it by:
 ```
 install.packages("RSwissMaps")
 ```
-For regularly updated version (latest: 0.1.1) with all geodata pre-installed, install from GitHub:
+For regularly updated version (latest: 0.1.2) with all geodata pre-installed, install from GitHub:
 ```
 install.packages("devtools")
 devtools::install_github("zumbov2/RSwissMaps", subdir = "allinone")
