@@ -1,8 +1,9 @@
 language: R
+before_install:
+  - cd allinone
 sudo: false
 cache: packages
 r:
 - oldrel
 - release
 - devel
-script: cd allinone
