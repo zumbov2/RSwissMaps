@@ -10,7 +10,7 @@ dis.template(year, endofyear = FALSE, cantons = NULL, districts = NULL)
 \item{year}{a numeric value. Available with GitHub version of package: \code{2001-2017}.}
 
 \item{endofyear}{if \code{FALSE}, districts as of January 1 are outputted. If \code{TRUE},
-districts as by December 31 are used. End-of-year data is available for \code{year > 2010}.}
+districts as by December 31 are used. End-of-year data is available for \code{year > 2009}.}
 
 \item{cantons}{a numeric (canton identification numbers) or a character (two-letter abbreviations)
 vector to create canton-specific templates.}

@@ -8,8 +8,8 @@
 \describe{
   \item{year}{year of geodata}
   \item{endofyear}{\code{0} for all data points}
-  \item{long}{longitude of point}
-  \item{lat}{latitude of point}
+  \item{long}{longitude of point (Swiss grid CH1903)}
+  \item{lat}{latitude of point (Swiss grid CH1903)}
   \item{group}{if two adjacent points are in the same group, then they get connected}
   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
   \code{country}, \code{lake})}
@@ -25,7 +25,7 @@ mapCH2005
 }
 \description{
 A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
- cantons and lakes as of 2005-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+ cantons and lakes. Reference date: 2005-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
  The data is scaled at ~1:2,000,000.
 }
 \references{

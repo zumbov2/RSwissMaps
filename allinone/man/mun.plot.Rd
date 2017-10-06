@@ -24,7 +24,7 @@ package: \code{2001-2017}}
 
 \item{endofyear}{if \code{FALSE}, administrative divisions as of January 1 are used. If \code{TRUE},
 administrative divisions as by December 31 are plotted. End-of-year data is available for
-\code{year > 2010}.}
+\code{year > 2009}.}
 
 \item{cantons}{a numeric (canton identification numbers) or a character (two-letter abbreviations)
 vector to plot municipalities of selected cantons.}

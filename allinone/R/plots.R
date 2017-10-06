@@ -2,15 +2,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2001)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2001-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2001-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 60,271 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -21,7 +21,6 @@
 #'
 #' @name mapCH2001
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2001"
@@ -29,15 +28,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2002)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2002-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2002-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 59,986 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -48,7 +47,6 @@
 #'
 #' @name mapCH2002
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2002"
@@ -56,15 +54,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2003)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2003-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2003-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 59,783 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -75,7 +73,6 @@
 #'
 #' @name mapCH2003
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2003"
@@ -83,15 +80,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2004)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2004-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2004-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 59,171 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -102,34 +99,6 @@
 #'
 #' @name mapCH2004
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
-#' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
-#' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
-"mapCH2004"
-
-#' Geodata of Swiss municipalities, districts, cantons and lakes (2004)
-#'
-#'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2004-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
-#'  The data is scaled at ~1:2,000,000.
-#'
-#' @format A data frame with 59,171 rows and 10 variables:
-#' \describe{
-#'   \item{year}{year of geodata}
-#'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
-#'   \item{group}{if two adjacent points are in the same group, then they get connected}
-#'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
-#'   \code{country}, \code{lake})}
-#'   \item{id}{official identification number of object}
-#'   \item{name}{name of object}
-#'   \item{dis}{district object belongs to}
-#'   \item{can}{canton object belongs to}}
-#'
-#' @name mapCH2004
-#' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2004"
@@ -137,15 +106,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2005)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2005-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2005-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 58,637 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -156,7 +125,6 @@
 #'
 #' @name mapCH2005
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2005"
@@ -164,15 +132,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2006)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2006-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2006-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 58,598 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -183,7 +151,6 @@
 #'
 #' @name mapCH2006
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2006"
@@ -191,15 +158,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2007)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2007-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2007-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 58,230 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -210,7 +177,6 @@
 #'
 #' @name mapCH2007
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2007"
@@ -218,15 +184,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2008)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2008-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2008-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 58,180 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -237,7 +203,6 @@
 #'
 #' @name mapCH2008
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2008"
@@ -245,15 +210,15 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2009)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2009-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
+#'  cantons and lakes. Reference date: 2009-1-1. The data is made publicly available by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
 #' @format A data frame with 57,301 rows and 10 variables:
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -264,7 +229,6 @@
 #'
 #' @name mapCH2009
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2009"
@@ -272,7 +236,7 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2010)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2010-1-1 and 2010-31-12. The data is made publicly available
+#'  cantons and lakes. Reference date: 2010-1-1 and 2010-31-12. The data is made publicly available
 #'  by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
@@ -280,8 +244,8 @@
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{if \code{0}, the data point dates from 2010-1-1, else from 2010-31-12}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -292,7 +256,6 @@
 #'
 #' @name mapCH2010
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2010"
@@ -300,7 +263,7 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2011)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2011-1-1 and 2011-31-12. The data is made publicly available
+#'  cantons and lakes. Reference date: 2011-1-1 and 2011-31-12. The data is made publicly available
 #'  by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
@@ -308,8 +271,8 @@
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{if \code{0}, the data point dates from 2011-1-1, else from 2011-31-12}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -320,7 +283,6 @@
 #'
 #' @name mapCH2011
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2011"
@@ -328,7 +290,7 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2012)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2012-1-1 and 2012-31-12. The data is made publicly available
+#'  cantons and lakes. Reference date: 2012-1-1 and 2012-31-12. The data is made publicly available
 #'  by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
@@ -336,8 +298,8 @@
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{if \code{0}, the data point dates from 2012-1-1, else from 2012-31-12}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -348,7 +310,6 @@
 #'
 #' @name mapCH2012
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2012"
@@ -356,7 +317,7 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2013)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2013-1-1 and 2013-31-12. The data is made publicly available
+#'  cantons and lakes. Reference date: 2013-1-1 and 2013-31-12. The data is made publicly available
 #'  by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
@@ -364,8 +325,8 @@
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{if \code{0}, the data point dates from 2013-1-1, else from 2013-31-12}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -376,7 +337,6 @@
 #'
 #' @name mapCH2013
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2013"
@@ -384,7 +344,7 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2014)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2014-1-1 and 2014-31-12. The data is made publicly available
+#'  cantons and lakes. Reference date: 2014-1-1 and 2014-31-12. The data is made publicly available
 #'  by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
@@ -392,8 +352,8 @@
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{if \code{0}, the data point dates from 2014-1-1, else from 2014-31-12}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -404,7 +364,6 @@
 #'
 #' @name mapCH2014
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2014"
@@ -412,7 +371,7 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2015)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2015-1-1 and 2015-31-12. The data is made publicly available
+#'  cantons and lakes. Reference date: 2015-1-1 and 2015-31-12. The data is made publicly available
 #'  by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
@@ -420,8 +379,8 @@
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{if \code{0}, the data point dates from 2015-1-1, else from 2015-31-12}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -432,7 +391,6 @@
 #'
 #' @name mapCH2015
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2015"
@@ -440,7 +398,7 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2016)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2016-1-1 and 2016-31-12. The data is made publicly available
+#'  cantons and lakes. Reference dates: 2016-1-1 and 2016-31-12. The data is made publicly available
 #'  by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
@@ -448,8 +406,8 @@
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{if \code{0}, the data point dates from 2016-1-1, else from 2016-31-12}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -460,7 +418,6 @@
 #'
 #' @name mapCH2016
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2016"
@@ -468,7 +425,7 @@
 #' Geodata of Swiss municipalities, districts, cantons and lakes (2017)
 #'
 #'  A ggplot2-compatible data frame containing geodata of Swiss municipalities, districts,
-#'  cantons and lakes as of 2017-1-1. The data is made publicly available
+#'  cantons and lakes. Reference date: 2017-1-1. The data is made publicly available
 #'  by the \href{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}{Swiss Federal Statistical Office}.
 #'  The data is scaled at ~1:2,000,000.
 #'
@@ -476,8 +433,8 @@
 #' \describe{
 #'   \item{year}{year of geodata}
 #'   \item{endofyear}{\code{0} for all data points}
-#'   \item{long}{longitude of point}
-#'   \item{lat}{latitude of point}
+#'   \item{long}{longitude of point (Swiss grid CH1903+)}
+#'   \item{lat}{latitude of point (Swiss grid CH1903+)}
 #'   \item{group}{if two adjacent points are in the same group, then they get connected}
 #'   \item{type}{type of object point belongs to: \code{municipality}, \code{district}, \code{canton},
 #'   \code{country}, \code{lake})}
@@ -488,7 +445,6 @@
 #'
 #' @name mapCH2017
 #' @docType data
-#' @author David Zumbach \email{david.zumbach@gfzb.ch}
 #' @source Swiss Federal Statistical Office, GEOSTAT (last download 2017-09-07)
 #' @references \url{https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html}
 "mapCH2017"
@@ -508,7 +464,7 @@
 #'     package: \code{2001-2017}
 #' @param endofyear if \code{FALSE}, administrative divisions as of January 1 are used. If \code{TRUE},
 #'     administrative divisions as by December 31 are plotted. End-of-year data is available for
-#'     \code{year > 2010}.
+#'     \code{year > 2009}.
 #' @param cantons a numeric (canton identification numbers) or a character (two-letter abbreviations)
 #'     vector to plot municipalities of selected cantons.
 #' @param districts a numeric (district identification numbers) or a character (district names)
@@ -685,7 +641,7 @@ mun.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
       # checking non-numeric input
       wrong_districts <- setdiff(tolower(districts), tolower(districts_name))
-      if(length(wrong_districts) > 1) stop(paste0("unknown district: ", wrong_districts, collapse = ", "))
+      if(length(wrong_districts) > 0) stop(paste0("unknown district: ", wrong_districts, collapse = ", "))
 
       # building map data
       for(i in 1:length(districts_name)){
@@ -698,7 +654,7 @@ mun.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
       # checking numeric input
       wrong_districts <- setdiff(districts, districts_id)
-      if(length(wrong_districts) > 1) stop(paste0("unknown district: ", wrong_districts, collapse = ", "))
+      if(length(wrong_districts) > 0) stop(paste0("unknown district: ", wrong_districts, collapse = ", "))
 
       # building map data
       for(i in 1:length(districts_id)){
@@ -725,7 +681,7 @@ mun.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
       # checking non-numeric input
       wrong_municipalities <- setdiff(tolower(municipalities), tolower(municipalities_name))
-      if(length(wrong_municipalities) == 1) stop(paste0("unknown municipality: ", wrong_municipalities, collapse = ", "))
+      if(length(wrong_municipalities) > 0) stop(paste0("unknown municipality: ", wrong_municipalities, collapse = ", "))
 
       # building map data
       for(i in 1:length(municipalities_name)){
@@ -738,7 +694,7 @@ mun.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
       # checking numeric input
       wrong_municipalities <- setdiff(municipalities, municipalities_id)
-      if(length(wrong_municipalities) == 1) stop(paste0("unknown municipality: ", wrong_municipalities, collapse = ", "))
+      if(length(wrong_municipalities) > 0) stop(paste0("unknown municipality: ", wrong_municipalities, collapse = ", "))
 
       # building map data
       for(i in 1:length(municipalities_id)){
@@ -1007,7 +963,7 @@ mun.plot <- function(bfs_id, data, year, endofyear = FALSE,
 #'     package: \code{2001-2017}.
 #' @param endofyear if \code{FALSE}, administrative divisions as of January 1 are used. If \code{TRUE},
 #'     administrative divisions as by December 31 are plotted. End-of-year data is available for
-#'     \code{year > 2010}.
+#'     \code{year > 2009}.
 #' @param cantons a numeric (canton identification numbers) or a character (two-letter abbreviations)
 #'     vector to plot districts of selected cantons.
 #' @param districts a numeric (district identification numbers) or a character (district names) vector
@@ -1176,7 +1132,7 @@ dis.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
       # checking non-numeric input
       wrong_districts <- setdiff(tolower(districts), tolower(districts_name))
-      if(length(wrong_districts) > 1) stop(paste0("unknown district: ", wrong_districts, collapse = ", "))
+      if(length(wrong_districts) > 0) stop(paste0("unknown district: ", wrong_districts, collapse = ", "))
 
       # building map data
       for(i in 1:length(districts_name)){
@@ -1189,7 +1145,7 @@ dis.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
       # checking numeric input
       wrong_districts <- setdiff(districts, districts_id)
-      if(length(wrong_districts) > 1) stop(paste0("unknown district: ", wrong_districts, collapse = ", "))
+      if(length(wrong_districts) > 0) stop(paste0("unknown district: ", wrong_districts, collapse = ", "))
 
       # building map data
       for(i in 1:length(districts_id)){
@@ -1450,7 +1406,7 @@ dis.plot <- function(bfs_id, data, year, endofyear = FALSE,
 #'     package: \code{2001-2017}.
 #' @param endofyear if \code{FALSE}, administrative divisions as of January 1 are used. If \code{TRUE},
 #'     administrative divisions as by December 31 are plotted. End-of-year data is available for
-#'     \code{year > 2010}.
+#'     \code{year > 2009}.
 #' @param cantons a numeric (canton identification numbers) or a character (two-letter abbreviations)
 #'     vector to plot selected cantons.
 #' @param lakes a numeric (lake identification numbers) or a character (lakes names) vector to

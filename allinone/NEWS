@@ -1,3 +1,11 @@
+RSwissMaps 0.1.2
+-----------------
+
+* debugged districts and municipalities selectors in all functions
+
+* reference to coordinates of long and lat (Swiss coordinate system)
+
+
 RSwissMaps 0.1.1
 -----------------
 
@@ -5,12 +13,10 @@ RSwissMaps 0.1.1
 
 * simplified color_discrete in all functions
 
-* set default for year in all functions to 2016
-
 * improved documentation for all functions
 
 
 RSwissMaps 0.1.0
 -----------------
 
-* First version of the package.
+* first version of the package.
