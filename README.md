@@ -8,11 +8,11 @@ RSwissMaps allows to link thematic data to Swiss administrative divisions (munic
 ## Data availability
 Geodata of Swiss municipalities, districts, and cantons is currently available for the following reference dates: 2001-1-1, 2002-1-1, 2003-1-1, 2004-1-1, 2005-1-1, 2006-1-1, 2007-1-1, 2008-1-1, 2009-1-1, 2010-1-1, 2010-31-12, 2011-1-1, 2011-31-12, 2012-1-1, 2012-31-12, 2013-1-1, 2013-31-12, 2014-1-1, 2014-31-12, 2015-1-1, 2015-31-12, 2016-1-1, 2016-31-12, 2017-1-1.
 
-## Geodetic reference systems
-Geodata 2001-2016: Swiss reference system LV03; Geodata 2017: Swiss reference system LV95. For further information, see: [swisstopo](https://www.swisstopo.admin.ch/en/knowledge-facts/surveying-geodesy/reference-systems/switzerland.html)
+## Coordinate reference system
+CH1903/LV03 (EPSG:21781). For more information, please see: [swisstopo](https://www.swisstopo.admin.ch/en/knowledge-facts/surveying-geodesy/reference-systems/switzerland.html) and [Spatial Reference](http://spatialreference.org/ref/epsg/21781/) 
 
 ## Commercial use
-For commercial use of the data, see: [GEOSTAT, BFS](https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/nutzungsbedingungen.html)
+For commercial use of the data, please see: [GEOSTAT, BFS](https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/nutzungsbedingungen.html)
 
 # Installation
 The version 0.1.0 is on CRAN, and you can install it by:
