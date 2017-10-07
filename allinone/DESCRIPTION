@@ -17,6 +17,6 @@ Imports: ggplot2, dplyr, downloader
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2017-10-07 09:05:51 UTC; David Zumbach
+Packaged: 2017-10-07 09:22:20 UTC; David Zumbach
 Author: David Zumbach [aut, cre]
 Maintainer: David Zumbach <david.zumbach@gfzb.ch>
