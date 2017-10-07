@@ -1,0 +1,32 @@
+RSwissMaps 0.1.3
+-----------------
+
+* changed crs of 2017 to CH1903/LV03
+
+* added variable 'hole' to data
+
+* removed 'holes' from lakes
+
+
+RSwissMaps 0.1.2
+-----------------
+
+* debugged districts and municipalities selectors in all functions
+
+* reference to coordinates of long and lat (Swiss coordinate system)
+
+
+RSwissMaps 0.1.1
+-----------------
+
+* map.load() downloads geodata no longer twice
+
+* simplified color_discrete in all functions
+
+* improved documentation for all functions
+
+
+RSwissMaps 0.1.0
+-----------------
+
+* first version of the package
