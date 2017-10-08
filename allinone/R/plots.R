@@ -817,6 +817,31 @@ mun.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
   rm(data_combined_c, data_combined_d, data_combined_m, data_bfs)
 
+  # Final prep for plot ------------------------
+  data_combined_holes <- NULL
+  data_combined_holes <- data_combined[data_combined$hole == TRUE,]
+  data_combined_2 <- NULL
+
+  if(!is.null(data_combined_holes)>0){
+
+    for(i in 1:nrow(data_combined_holes)){
+
+      ps <- data_combined[data_combined$long==data_combined_holes$long[i],]
+      ps <- ps[ps$lat==data_combined_holes$lat[i],]
+      ps <- ps[ps$name!=data_combined_holes$name[i],]
+      data_combined_2 <- rbind.data.frame(data_combined_2, ps)
+
+    }
+
+    rm(ps)
+
+  }
+
+  rm(data_combined_holes)
+
+  data_lakes_holes <- NULL
+  data_lakes_holes <- data_lakes[data_lakes$hole == T,]
+
   # Plot areas ------------------------
   if(!is.logical(continuous)) stop("continuous: TRUE or FALSE needed")
   if(continuous == FALSE){
@@ -909,6 +934,13 @@ mun.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
   }
 
+  # Plot second layer ares (exklaves) ------------------------
+  if(nrow(data_combined_2)>0){
+
+    p <- p + ggplot2::geom_polygon(data = data_combined_2, ggplot2::aes(fill = data_combined_2$data, x = long, y = lat, group = group))
+
+    }
+
   # Add boundaries to plot ------------------------
   if(length(boundaries)!=length(boundaries_size) | length(boundaries)!=length(boundaries_color)) stop("boundary settings are not correctly specified")
 
@@ -958,9 +990,7 @@ mun.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
 
   # Add holes to lakes ------------------------
-  data_lakes_holes <- NULL
-  data_lakes_holes <- data_lakes[data_lakes$hole == T,]
-  if(length(data_lakes_holes)>0){
+  if(nrow(data_lakes_holes)>0){
 
     p <- p + ggplot2::geom_polygon(data = data_lakes_holes, ggplot2::aes(x = long, y = lat, group = group), fill = "white")
 
@@ -1279,6 +1309,31 @@ dis.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
   rm(data_combined_c, data_combined_d, data_bfs)
 
+  # Final prep for plot ------------------------
+  data_combined_holes <- NULL
+  data_combined_holes <- data_combined[data_combined$hole == TRUE,]
+  data_combined_2 <- NULL
+
+  if(!is.null(data_combined_holes)>0){
+
+    for(i in 1:nrow(data_combined_holes)){
+
+      ps <- data_combined[data_combined$long==data_combined_holes$long[i],]
+      ps <- ps[ps$lat==data_combined_holes$lat[i],]
+      ps <- ps[ps$name!=data_combined_holes$name[i],]
+      data_combined_2 <- rbind.data.frame(data_combined_2, ps)
+
+    }
+
+    rm(ps)
+
+  }
+
+  rm(data_combined_holes)
+
+  data_lakes_holes <- NULL
+  data_lakes_holes <- data_lakes[data_lakes$hole == T,]
+
   # Plot areas ------------------------
   if(!is.logical(continuous)) stop("continuous: TRUE or FALSE needed")
 
@@ -1372,6 +1427,13 @@ dis.plot <- function(bfs_id, data, year, endofyear = FALSE,
           label.hjust = 0.5))
 
   }
+  # Plot second layer ares (exklaves) ------------------------
+  if(nrow(data_combined_2)>0){
+
+    p <- p + ggplot2::geom_polygon(data = data_combined_2, ggplot2::aes(fill = data_combined_2$data, x = long, y = lat, group = group))
+
+  }
+
   # Add boundaries to plot ------------------------
   if(length(boundaries)!=length(boundaries_size) | length(boundaries)!=length(boundaries_color)) stop("boundary settings are not correctly specified")
 
@@ -1398,6 +1460,7 @@ dis.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
   # Add LAKES to plot ------------------------
   if(lakes[1] != "none"){
+
     p <- p +
 
       # Lakes
@@ -1408,15 +1471,13 @@ dis.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
   }
 
+
   # Add holes to lakes ------------------------
-  data_lakes_holes <- NULL
-  data_lakes_holes <- data_lakes[data_lakes$hole == T,]
-  if(length(data_lakes_holes)>0){
+  if(nrow(data_lakes_holes)>0){
 
     p <- p + ggplot2::geom_polygon(data = data_lakes_holes, ggplot2::aes(x = long, y = lat, group = group), fill = "white")
 
   }
-
   # Saving plot ------------------------
   if(save == TRUE){
     ggplot2::ggsave(paste0(filename), dpi = dpi, width = width, height = heigth, units = units)
@@ -1660,19 +1721,44 @@ can.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
   rm(data_combined_c, data_bfs)
 
+  # Final prep for plot ------------------------
+  data_combined_holes <- NULL
+  data_combined_holes <- data_combined[data_combined$hole == TRUE,]
+  data_combined_2 <- NULL
+
+  if(!is.null(data_combined_holes)>0){
+
+    for(i in 1:nrow(data_combined_holes)){
+
+      ps <- data_combined[data_combined$long==data_combined_holes$long[i],]
+      ps <- ps[ps$lat==data_combined_holes$lat[i],]
+      ps <- ps[ps$name!=data_combined_holes$name[i],]
+      data_combined_2 <- rbind.data.frame(data_combined_2, ps)
+
+    }
+
+    rm(ps)
+
+  }
+
+  rm(data_combined_holes)
+  data_combined_2 <- data_combined_2[!data_combined_2$id==15|data_combined_2$id==16,]
+
+  data_combined_3 <- data_combined[data_combined$id == 15 | data_combined$id == 16,]
+
+  data_lakes_holes <- NULL
+  data_lakes_holes <- data_lakes[data_lakes$hole == T,]
+
   # Plot areas ------------------------
   if(!is.logical(continuous)) stop("continuous: TRUE or FALSE needed")
 
-  data_combined_1 <- data_combined[data_combined$id < 15 | data_combined$id > 16,]
-  data_combined_ai_ar <- data_combined[data_combined$id == 15 | data_combined$id == 16,]
-
   if(continuous == FALSE){
+
+    data_combined$data <- as.factor(data_combined$data)
 
     p <- ggplot2::ggplot() +
 
-      ggplot2::geom_polygon(data = data_combined_1, ggplot2::aes(fill = data_combined_1$data, x = long, y = lat, group = group)) +
-
-      ggplot2::geom_polygon(data = data_combined_ai_ar, ggplot2::aes(fill = data_combined_ai_ar$data, x = long, y = lat, group = group)) +
+      ggplot2::geom_polygon(data = data_combined, ggplot2::aes(fill = data_combined$data, x = long, y = lat, group = group)) +
 
       ggplot2::coord_equal() +
 
@@ -1694,10 +1780,10 @@ can.plot <- function(bfs_id, data, year, endofyear = FALSE,
         legend.position = legend_position) +
 
       ggplot2::labs(x = NULL,
-           y = NULL,
-           title = title,
-           subtitle = subtitle,
-           caption = caption) +
+                    y = NULL,
+                    title = title,
+                    subtitle = subtitle,
+                    caption = caption) +
 
       ggplot2::scale_fill_brewer(
         type = color_discrete[1],
@@ -1713,9 +1799,7 @@ can.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
     p <- ggplot2::ggplot() +
 
-      ggplot2::geom_polygon(data = data_combined_1, ggplot2::aes(fill = data_combined_1$data, x = long, y = lat, group = group)) +
-
-      ggplot2::geom_polygon(data = data_combined_ai_ar, ggplot2::aes(fill = data_combined_ai_ar$data, x = long, y = lat, group = group)) +
+      ggplot2::geom_polygon(data = data_combined, ggplot2::aes(fill = data_combined$data, x = long, y = lat, group = group)) +
 
       ggplot2::coord_equal() +
 
@@ -1738,10 +1822,10 @@ can.plot <- function(bfs_id, data, year, endofyear = FALSE,
       ) +
 
       ggplot2::labs(x = NULL,
-           y = NULL,
-           title = title,
-           subtitle = subtitle,
-           caption = caption) +
+                    y = NULL,
+                    title = title,
+                    subtitle = subtitle,
+                    caption = caption) +
 
       ggplot2::scale_fill_gradient(
         low = color_continuous[1],
@@ -1756,6 +1840,19 @@ can.plot <- function(bfs_id, data, year, endofyear = FALSE,
           title.position = 'top',
           title.hjust = 0.5,
           label.hjust = 0.5))
+
+  }
+  # Plot second layer ares (exklaves) ------------------------
+  if(nrow(data_combined_2)>0){
+
+    p <- p + ggplot2::geom_polygon(data = data_combined_2, ggplot2::aes(fill = data_combined_2$data, x = long, y = lat, group = group))
+
+  }
+
+  # Plot third layer ares (AI/AR) ------------------------
+  if(nrow(data_combined_3)>0){
+
+    p <- p + ggplot2::geom_polygon(data = data_combined_3, ggplot2::aes(fill = data_combined_3$data, x = long, y = lat, group = group))
 
   }
 
@@ -1785,6 +1882,7 @@ can.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
   # Add LAKES to plot ------------------------
   if(lakes[1] != "none"){
+
     p <- p +
 
       # Lakes
@@ -1795,15 +1893,13 @@ can.plot <- function(bfs_id, data, year, endofyear = FALSE,
 
   }
 
+
   # Add holes to lakes ------------------------
-  data_lakes_holes <- NULL
-  data_lakes_holes <- data_lakes[data_lakes$hole == T,]
-  if(length(data_lakes_holes)>0){
+  if(nrow(data_lakes_holes)>0){
 
     p <- p + ggplot2::geom_polygon(data = data_lakes_holes, ggplot2::aes(x = long, y = lat, group = group), fill = "white")
 
   }
-
   # Saving plot ------------------------
   if(save == TRUE){
     ggplot2::ggsave(paste0(filename), dpi = dpi, width = width, height = heigth, units = units)

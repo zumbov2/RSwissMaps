@@ -4,7 +4,7 @@
 \name{mapCH2011}
 \alias{mapCH2011}
 \title{Geodata of Swiss municipalities, districts, cantons and lakes (2011)}
-\format{A data frame with 92,762 rows and 10 variables:
+\format{A data frame with 111,459 rows and 10 variables:
 \describe{
   \item{year}{year of geodata}
   \item{endofyear}{if \code{0}, the data point dates from 2011-1-1, else from 2011-31-12}
