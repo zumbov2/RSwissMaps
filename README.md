@@ -1,7 +1,8 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/RSwissMaps)](https://cran.r-project.org/package=RSwissMaps)
 [![Build Status](https://travis-ci.org/zumbov2/RSwissMaps.svg?branch=master)](https://travis-ci.org/zumbov2/RSwissMaps)
 [![Licence](https://img.shields.io/badge/licence-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
-[![cranlogs](http://cranlogs.r-pkg.org/badges/RSwissMaps?color=brightgreen)](http://cran.rstudio.com/web/packages/RSwissMaps/index.html)
+[![cranlogs](https://cranlogs.r-pkg.org/badges/grand-total/RSwissMaps)](http://cran.rstudio.com/web/packages/RSwissMaps/index.html)
+
 # RSwissMaps
 
 RSwissMaps allows to link thematic data to Swiss administrative divisions (municipalities, districts, cantons) and to plot it on a map. The maps can be customised (to some degree) and saved in different resolutions and formats. The package also allows to generate tailored templates for data collection. The geodata used is publicly available on the [Swiss Federal Statistical Office website](https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/geodaten-bundesstatistik/administrative-grenzen/generalisierte-gemeindegrenzen.html). 
