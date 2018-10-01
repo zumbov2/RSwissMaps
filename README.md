@@ -17,12 +17,12 @@ CH1903/LV03 (EPSG:21781). For more information, please see: [swisstopo](https://
 For commercial use of the data, please see: [GEOSTAT, BFS](https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/geostat/nutzungsbedingungen.html)
 
 # Installation
-The version 0.1.0 is on CRAN, and you can install it by:
-```
+Version 0.1.0 is on CRAN, and you can install it by:
+```r
 install.packages("RSwissMaps")
 ```
 For regularly updated version (latest: 0.1.4) with all geodata pre-installed, install from GitHub:
-```
+```r
 install.packages("devtools")
 devtools::install_github("zumbov2/RSwissMaps", subdir = "allinone")
 ```
@@ -30,7 +30,7 @@ devtools::install_github("zumbov2/RSwissMaps", subdir = "allinone")
 # Examples
 ## Example 1 (with code)
 ![municipalities](https://github.com/zumbov2/RSwissMaps/blob/master/plots/mun_plot.png)
-```
+```r
 gemeinden <- mun.template(2017)
 
 for(i in 1:nrow(gemeinden)){
@@ -49,7 +49,7 @@ mun.plot(gemeinden$bfs_nr, gemeinden$values, 2017,
 
 ## Example 2 (with code)
 ![municipalities2](https://github.com/zumbov2/RSwissMaps/blob/master/plots/mun_plot2.png)
-```
+```r
 gemeinden <- mun.template(2017, cantons = c("AG", "ZH"))
 
 for(i in 1:nrow(gemeinden)){
